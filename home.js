@@ -112,7 +112,7 @@ function showPage() {
 // loader function end
 
 // case study function js code start
-var swiper = new Swiper(".sswiper-container", {
+var swiper = new Swiper(".swiper-container", {
   slidesPerView: 3,
   spaceBetween: 10,
   loop: true,
@@ -129,16 +129,13 @@ var swiper = new Swiper(".sswiper-container", {
 // case study function js code end
 
 // News and insights sec slider function start
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
   },
-  breakpoints: {
-      768: { slidesPerView: 2 },
-      480: { slidesPerView: 1 }
-  }
 });
 // News and insights sec slider function end
+
