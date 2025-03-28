@@ -797,6 +797,7 @@ button#next {
   display: flex;
   margin: 10px;
   width: 100%;
+  cursor: grab;
 }
 
 .left-content {
@@ -950,6 +951,9 @@ a.cta:hover, a.cta:hover svg {
   max-width: 25%;
   border-right: solid 1px;
   height: 50%;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
 }
 
 .news-image {
@@ -958,7 +962,7 @@ a.cta:hover, a.cta:hover svg {
   overflow: hidden;
   border-radius: 5px;
   transform-origin: 0 0;
-  transition: transform .25s, visibility .25s ease-in;
+  transition: transform 0.6s ease-in-out;
 }
 
 .news-image img {
@@ -975,7 +979,7 @@ a.cta:hover, a.cta:hover svg {
 }
 
 .news-content {
-  margin-top: 50%;
+  margin-top: 40%;
 }
 
 .news-date {
