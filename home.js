@@ -1,14 +1,14 @@
 // hero video play/pause function start
-const video = document.getElementById("myVideo-inner");
+const video = document.getElementById("myVideoInner");
 const playIcon = document.querySelector(".play-icon");
 
 playIcon.addEventListener("click", () => {
   if (video.paused) {
     video.play();
-    playIcon.src = "asstes/images/pause-icon.png"; // Change to pause icon when playing
+    playIcon.src = "asstes/images/pause-icon.png";
   } else {
     video.pause();
-    playIcon.src = "asstes/images/play-icon.png"; // Change back to play icon when paused
+    playIcon.src = "asstes/images/play-icon.png";
   }
 });
 // hero video play/pause function end
@@ -68,11 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
       slide.classList.remove("active", "left", "right");
 
       if (index === currentIndex) {
-        slide.classList.add("active"); // Centered slide
-      } else if (index === (currentIndex - 1 + slides.length) % slides.length) {
-        slide.classList.add("left"); // Left slide
+        slide.classList.add("active");
+      } else if (
+        index ===
+        (currentIndex - 1 + slides.length) % slides.length
+      ) {
+        slide.classList.add("left");
       } else if (index === (currentIndex + 1) % slides.length) {
-        slide.classList.add("right"); // Right slide
+        slide.classList.add("right");
       }
     });
   }
@@ -87,15 +90,13 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlides();
   });
 
-  // Auto-slide every 3 seconds
   setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlides();
-  }, 6000);
+  }, 4000);
 
-  updateSlides(); // Initial setup
+  updateSlides();
 });
-
 // our services sec tabs function end
 
 // loader function start
@@ -133,9 +134,36 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 // News and insights sec slider function end
 
+// responsive mobile sticky function start
+$(window).on("scroll", function () {
+  const sc = $(window).scrollTop();
+  $("#main-navbar").toggleClass("navbar-scroll", sc > 150);
+});
+
+// Toggle menu on mobile/tablet
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("toggle-btn");
+  const navMenu = document.getElementById("nav-menu");
+  const dropdown = document.querySelector(".dropdown");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  if (dropdown) {
+    dropdown.addEventListener("click", function (e) {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        this.classList.toggle("open");
+      }
+    });
+  }
+});
+
+// responsive mobile sticky function end

@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="stylenew.css" />
     <title>Toppan Gravity</title>
   </head>
@@ -13,163 +19,151 @@
     <div style="display: none" id="myDiv">
       <!-- main menu -->
       <header>
-        <div class="main-menu">
-          <div class="logo"><img src="asstes/svg/Logo.svg" alt /></div>
-          <nav class="navbar">
-            <a href="#">
-              <div class="content vertical">
-                <div class="text">Home</div>
-                <div class="hover-text">Home</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="content vertical">
-                <div class="text">About Us</div>
-                <div class="hover-text">About Us</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="content vertical">
-                <div class="text">Payment</div>
-                <div class="hover-text">Payment</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="content vertical">
-                <div class="text">Identity</div>
-                <div class="hover-text">Identity</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="content vertical">
-                <div class="text">Commercial</div>
-                <div class="hover-text">Commercial</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="content vertical">
-                <div class="text">Our Services</div>
-                <div class="hover-text">Our Services</div>
-              </div>
-            </a>
-            <div class="dropdown">
-              <a href="#" class="dropbtn">
-                <div class="content vertical">
-                  <div class="text">
-                    What's On <i class="fa fa-caret-down"></i>
-                  </div>
-                  <div class="hover-text">
-                    What's On<i class="fa fa-caret-down"></i>
-                  </div>
+        <nav id="main-navbar"
+          class="navbar navbar-default navbar-fixed-top">
+          <div class="logo"><img src="asstes/svg/Logo.svg" alt="Logo" /></div>
+          <button class="navbar-toggle" id="toggle-btn">&#9776;</button>
+          <div class="container navbar-container">
+            <ul class="nav" id="nav-menu">
+              <li>
+                <a href="#"><div class="content vertical">
+                    <div class="text">Home</div>
+                    <div class="hover-text">Home</div>
+                  </div></a>
+              </li>
+              <li>
+                <a href="#"><div class="content vertical">
+                    <div class="text">About Us</div>
+                    <div class="hover-text">About Us</div>
+                  </div></a>
+              </li>
+              <li>
+                <a href="#"><div class="content vertical">
+                    <div class="text">Payment</div>
+                    <div class="hover-text">Payment</div>
+                  </div></a>
+              </li>
+              <li>
+                <a href="#"><div class="content vertical">
+                    <div class="text">Identity</div>
+                    <div class="hover-text">Identity</div>
+                  </div></a>
+              </li>
+              <li>
+                <a href="#"><div class="content vertical">
+                    <div class="text">Commercial</div>
+                    <div class="hover-text">Commercial</div>
+                  </div></a>
+              </li>
+              <li>
+                <a href="#"><div class="content vertical">
+                    <div class="text">Our Services</div>
+                    <div class="hover-text">Our Services</div>
+                  </div></a>
+              </li>
+              <div class="dropdown">
+                <li>
+                  <a href="#" class="dropbtn">
+                    <div class="content vertical">
+                      <div class="text">
+                        What's On <i
+                          class="fa fa-caret-down"></i>
+                      </div>
+                      <div class="hover-text">
+                        What's On <i
+                          class="fa fa-caret-down"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <div class="dropdown-content">
+                  <li>
+                    <a href="#"><div class="content vertical">
+                        <div class="text">Media
+                          Gallery</div>
+                        <div class="hover-text">Media
+                          Gallery</div>
+                      </div></a>
+                  </li>
+                  <li>
+                    <a href="#"><div class="content vertical">
+                        <div class="text">News &
+                          Insights</div>
+                        <div class="hover-text">News &
+                          Insights</div>
+                      </div></a>
+                  </li>
+                  <li>
+                    <a href="#"><div class="content vertical">
+                        <div class="text">Case Study</div>
+                        <div class="hover-text">Case
+                          Study</div>
+                      </div></a>
+                  </li>
+                  <li>
+                    <a href="#"><div class="content vertical">
+                        <div class="text">Blogs</div>
+                        <div class="hover-text">Blogs</div>
+                      </div></a>
+                  </li>
                 </div>
-              </a>
-              <div class="dropdown-content">
-                <a href="#">
-                  <div class="content vertical">
-                    <div class="text">Media Gallery</div>
-                    <div class="hover-text">Media Gallery</div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="content vertical">
-                    <div class="text">News & Insights</div>
-                    <div class="hover-text">News & Insights</div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="content vertical">
-                    <div class="text">Case Study</div>
-                    <div class="hover-text">Case Study</div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="content vertical">
-                    <div class="text">Blogs</div>
-                    <div class="hover-text">Blogs</div>
-                  </div>
-                </a>
               </div>
-            </div>
-            <button class="contact-btn">Contact US</button>
-          </nav>
-        </div>
+              <button class="contact-btn">Contact Us</button>
+            </ul>
+          </div>
+        </nav>
       </header>
       <!-- hero section -->
-      <section>
-        <div class="container">
-          <div class="herosection">
-            <div class="hero-video">
-              <video height="980" width="100%" autoplay muted loop id="myVideo">
-                <source
-                  src="asstes/video/hero-section-video.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <div class="hero-inner-container">
-              <div class="hero-text">
-                <h4 class="hero-heading"><u>INNOVATION IN MOTION</u></h4>
-                <p class="hero-para">
-                  Provider Of Next-Generation <br />
-                  Virtual & Physical Security Documents
-                </p>
-                <button class="explore-btn">
-                  Explore More
-                  <img
-                    class="fa-arrow-right"
-                    src="asstes/svg/arrow-right.svg"
-                    alt
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="hero-inner-container-two">
-              <video muted loop id="myVideo-inner">
-                <source
-                  src="asstes/video/hero-inner-video.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <img
-                src="asstes/images/play-icon.png"
-                src="asstes/images/pause-icon.png"
-                alt="video-play-icon"
-                class="play-icon"
-              />
-            </div>
-            <div class="social scroll-down--fixed-bottom">
-              <div class="social-icons">
-                <span>Follow Us</span>
-                <span class="social-links">
-                  <a href="#">
-                    <img src="asstes/svg/facebook-icon.svg" alt="facebook" />
-                  </a>
-                  <a href="#">
-                    <img src="asstes/svg/instagram-icon.svg" alt="instagram" />
-                  </a>
-                  <a href="#">
-                    <img src="asstes/svg/twitter-icon.svg" alt="twitter" />
-                  </a>
-                  <a href="#">
-                    <img src="asstes/svg/linkedin-icon.svg" alt="linkedin" />
-                  </a>
-                  <a href="#">
-                    <img src="asstes/svg/youtube-icon.svg" alt="youtube" />
-                  </a>
-                </span>
-              </div>
-              <div class="scroll-down">
-                <img
-                  class="scroll-down-img"
-                  src="asstes/images/scroll-down.png"
-                  alt
-                />
-                <div class="mouse"></div>
-              </div>
-            </div>
+      <!-- Background Video -->
+      <video autoplay muted loop id="myVideo">
+        <source src="asstes/video/hero-section-video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h4>Innovation in Motion</h4>
+        <h1>
+          Provider Of Next-Generation<br />Virtual & Physical Security Documents
+        </h1>
+        <button class="explore-btn">
+          Explore More
+          <img src="asstes/svg/arrow-right.svg" alt="arrow" />
+        </button>
+
+        <!-- Right Side Video -->
+        <div class="hero-inner-video">
+          <video id="myVideoInner" muted loop>
+            <source src="asstes/video/hero-inner-video.mp4" type="video/mp4" />
+          </video>
+          <img src="asstes/images/play-icon.png" alt="play-pause"
+            class="play-icon" />
+        </div>
+
+        <!-- Social + Scroll Section -->
+        <div class="social scroll-down--fixed-bottom">
+          <div class="social-icons">
+            <span>Follow Us</span>
+            <span class="social-links">
+              <a href="#"><img src="asstes/svg/facebook-icon.svg"
+                  alt="facebook" /></a>
+              <a href="#"><img src="asstes/svg/instagram-icon.svg"
+                  alt="instagram" /></a>
+              <a href="#"><img src="asstes/svg/twitter-icon.svg"
+                  alt="twitter" /></a>
+              <a href="#"><img src="asstes/svg/linkedin-icon.svg"
+                  alt="linkedin" /></a>
+              <a href="#"><img src="asstes/svg/youtube-icon.svg"
+                  alt="youtube" /></a>
+            </span>
+          </div>
+          <div class="scroll-down">
+            <img class="scroll-down-img" src="asstes/images/scroll-down.png"
+              alt="scroll" />
+            <div class="mouse"></div>
           </div>
         </div>
       </section>
+      <!-- hero section -->
       <!-- about us section -->
       <section>
         <div class="about-us-container">
@@ -182,10 +176,12 @@
               <p class="about-us-para">
                 Toppan Gravity is a subsidiary of TOPPEN next, serving as the
                 international development arm of the TOPPEN group in the
-                security domain. Being part of the most prestigious conglomerate
-                in the industry with decades of experience and multiple
-                well-known references, Toppan Gravity benefits from Toppan
-                Printing’s strong market position and extensive expertise.
+                security
+                domain. Being part of the most prestigious conglomerate in the
+                industry with decades of experience and multiple well-known
+                references, Toppan Gravity benefits from Toppan Printing’s
+                strong
+                market position and extensive expertise.
               </p>
               <p class="about-us-para">
                 As a global solutions provider primarily focused on the payment
@@ -196,18 +192,13 @@
               </p>
               <button class="about-us-btn">
                 Read More
-                <img
-                  class="fa-arrow-right"
-                  src="asstes/svg/arrow-right.svg"
-                  alt
-                />
+                <img class="fa-arrow-right" src="asstes/svg/arrow-right.svg"
+                  alt />
               </button>
             </div>
             <div class="about-us-image">
-              <img
-                src="asstes/images/about-us-image.png"
-                alt="about-us-image"
-              />
+              <img src="asstes/images/about-us-image.png"
+                alt="about-us-image" />
             </div>
             <div id="counter-section" class="counter-section">
               <div class="counter-item">
@@ -228,18 +219,18 @@
               <div class="counter-item">
                 <div class="counter-number" id="countriesCounter">0</div>
                 <div class="counter-label">Customers In</div>
+                <div class="divider"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- our solution section -->
+      <!-- Our Solution Section -->
       <section>
         <div class="solutions-section">
           <h3 class="section-title">OUR SOLUTIONS</h3>
           <h2 class="main-title">
-            Toppan Gravity Offers Smart<br />
-            Solutions For Every Market
+            Toppan Gravity Offers Smart<br />Solutions For Every Market
           </h2>
           <div class="arc-container">
             <div class="arc-item" id="to-pay">
@@ -259,79 +250,69 @@
               <span>To Bond</span>
             </div>
             <div class="arc-item" id="to-connect">
-              <img
-                src="asstes/svg/our-solution-dot-icon.svg"
-                alt="To Connect"
-              />
+              <img src="asstes/svg/our-solution-dot-icon.svg"
+                alt="To Connect" />
               <span>To Connect</span>
             </div>
+
             <div class="center-icon">
-              <img
-                src="asstes/svg/transport-access-icon.svg"
-                alt="Transport & Access"
-              />
+              <img src="asstes/svg/transport-access-icon.svg"
+                alt="Transport & Access" />
               <h2>Transport & Access</h2>
               <ul>
                 <li>Cutting-Edge Cards</li>
                 <li>Expert Services</li>
               </ul>
             </div>
+
             <div class="circle-image">
-              <img src="asstes/images/half-circle.png" alt />
+              <img src="asstes/images/half-circle.png" alt="Arc" />
             </div>
           </div>
         </div>
       </section>
       <!-- our Services section -->
-      <section>
-        <div class="service-container">
-          <div class="service-heading">
-            <div>
-              <span class="about-span">OUR SERVICES</span>
-              <h4 class="about-us-heading">
-                Comprehensive Overview Of<br />Our Service Offerings
-              </h4>
-            </div>
-            <button class="service-us-btn">
-              View All Services
-              <img
-                class="fa-arrow-right"
-                src="asstes/svg/arrow-right.svg"
-                alt
-              />
-            </button>
+      <section class="services-section">
+        <div class="services-header">
+          <div class="services-title service-heading">
+            <span class="about-span">OUR SERVICES</span>
+            <h4 class="about-us-heading">
+              Comprehensive Overview Of<br />Our Service Offerings
+            </h4>
           </div>
-          <div class="slider-wrapper">
-            <div class="slider-container">
-              <div class="slide">
-                <img src="asstes/images/Consulting.png" alt="Consulting" />
-                <div class="slide-title">Consulting</div>
-              </div>
-              <div class="slide">
-                <img
-                  src="asstes/images/Personalization.png"
-                  alt="Personalization"
-                />
-                <div class="slide-title">Personalization</div>
-              </div>
-              <div class="slide">
-                <img src="asstes/images/Design.png" alt="Design" />
-                <div class="slide-title">Design</div>
-              </div>
-              <div class="slide">
-                <img src="asstes/images/Design.png" alt="Strategy" />
-                <div class="slide-title">Strategy</div>
-              </div>
+          <button class="about-us-btn">
+            View All Services
+            <img class="fa-arrow-right" src="asstes/svg/arrow-right.svg" alt="">
+          </button>
+        </div>
+  
+      <div class="slider-wrapper">
+          <div class="slider-container">
+            <div class="slide">
+              <img src="asstes/images/Consulting.png" alt="Consulting" />
+              <div class="slide-title">Consulting</div>
             </div>
-
-            <div class="slider-controls">
-              <button id="prev">&lt;</button>
-              <button id="next">&gt;</button>
+            <div class="slide">
+              <img src="asstes/images/Personalization.png" alt="Personalization" />
+              <div class="slide-title">Personalization</div>
             </div>
+            <div class="slide">
+              <img src="asstes/images/Design.png" alt="Design" />
+              <div class="slide-title">Design</div>
+            </div>
+            <div class="slide">
+              <img src="asstes/images/Design.png" alt="Strategy" />
+              <div class="slide-title">Strategy</div>
+            </div>
+          </div>
+  
+          <div class="slider-controls">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
           </div>
         </div>
       </section>
-
+      <!-- our Services section -->
       <!-- case study section -->
       <section class="case-study">
         <div class="left-content">
@@ -350,8 +331,7 @@
               <img
                 class="fa-arrow-right"
                 src="asstes/svg/arrow-right.svg"
-                alt
-              />
+                alt />
             </button>
           </div>
           <div class="swiper-wrapper">
@@ -359,8 +339,7 @@
               <img
                 class="cs-slide-images"
                 src="asstes/images/cs-securet.png"
-                alt="Slide 1"
-              />
+                alt="Slide 1" />
               <h2 class="cs-slide-heading">Securet ECH</h2>
               <a href="#" class="cta">
                 <span>Read More</span>
@@ -374,8 +353,7 @@
               <img
                 class="cs-slide-images"
                 src="asstes/images/cs-agility-logistics.png"
-                alt="Slide 2"
-              />
+                alt="Slide 2" />
               <h2 class="cs-slide-heading">Agility Logistics</h2>
               <a href="#" class="cta">
                 <span>Read More</span>
@@ -389,8 +367,7 @@
               <img
                 class="cs-slide-images"
                 src="asstes/images/cs-khaleej-time.png"
-                alt="Slide 3"
-              />
+                alt="Slide 3" />
               <h2 class="cs-slide-heading">Khaleej Times Riverbed</h2>
               <a href="#" class="cta">
                 <span>Read More</span>
@@ -404,8 +381,7 @@
               <img
                 class="cs-slide-images"
                 src="asstes/images/cs-agility-logistics.png"
-                alt="Slide 4"
-              />
+                alt="Slide 4" />
               <h2 class="cs-slide-heading">Agility Logistics</h2>
               <a href="#" class="cta">
                 <span>Read More</span>
@@ -419,8 +395,7 @@
               <img
                 class="cs-slide-images"
                 src="asstes/images/cs-securet.png"
-                alt="Slide 1"
-              />
+                alt="Slide 1" />
               <h2 class="cs-slide-heading">Securet ECH</h2>
               <a href="#" class="cta">
                 <span>Read More</span>
@@ -450,8 +425,7 @@
               <img
                 class="fa-arrow-right"
                 src="asstes/svg/arrow-right.svg"
-                alt
-              />
+                alt />
             </button>
           </div>
           <div class="swiper mySwiper">
@@ -509,81 +483,91 @@
       <!-- news section -->
 
       <!-- Newsletter Section -->
-<section class="newsletter">
-  <div class="newsletter-container">
-    <div class="newsletter-text">
-      <h2>Subscribe to our<br>Newsletter</h2>
-      <p>Sign up for our newsletter to receive special offers, news and events</p>
-    </div>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Email" required>
-      <button type="submit">Subscribe Now →</button>
-    </form>
-  </div>
-</section>
+      <section class="newsletter">
+        <div class="newsletter-container">
+          <div class="newsletter-text">
+            <h2>Subscribe to our<br>Newsletter</h2>
+            <p>Sign up for our newsletter to receive special offers, news and
+              events</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Subscribe Now →</button>
+          </form>
+        </div>
+      </section>
 
-<!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col company-info">
-      <img src="asstes/svg/Logo.svg" alt="Toppan Gravity Logo" style="max-width: 180px;">
-      <p>Toppan Gravity is a subsidiary of TOPPAN next, serving as the international development arm of the TOPPAN group in the security domain.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Useful Links</h4>
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Payment</li>
-        <li>Identity</li>
-        <li>Commercial</li>
-        <li>Our Services</li>
-        <li>What's On</li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li>Consulting</li>
-        <li>Design</li>
-        <li>Personalization</li>
-        <li>Managed Service</li>
-        <li>Fulfillment</li>
-        <li>Logistics</li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Social Media</h4>
-      <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-        <li>Linked In</li>
-      </ul>
-    </div>
-    <div class="footer-col margin-col">
-      <h4>Contact Us</h4>
-      <ul>
-        <li><strong>Email:</strong><br> <a href="#!">www.Toppangravity.com</a></li>
-        <li><strong>Phone:</strong><br> <a href="#!">+971 4 361 5997</a></li>
-        <li><strong>Location:</strong><br><p class="col-margin">Ubora Office Tower, Office No. 1204 Marasi Drive, Business Bay P.O. Box 9051 Dubai, UAE</p></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>©2024 Toppan Gravity. All Rights Reserved</p>
-    <div class="footer-links">
-      <a href="#">Terms & Conditions</a> |
-      <a href="#">Privacy Policy</a> |
-      <a href="#">Cookies</a>
-    </div>
-  </div>
-</footer>
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col company-info">
+            <img src="asstes/svg/Logo.svg" alt="Toppan Gravity Logo"
+              style="max-width: 180px;">
+            <p>Toppan Gravity is a subsidiary of TOPPAN next, serving as the
+              international development arm of the TOPPAN group in the security
+              domain.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Payment</li>
+              <li>Identity</li>
+              <li>Commercial</li>
+              <li>Our Services</li>
+              <li>What's On</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li>Consulting</li>
+              <li>Design</li>
+              <li>Personalization</li>
+              <li>Managed Service</li>
+              <li>Fulfillment</li>
+              <li>Logistics</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Social Media</h4>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Linked In</li>
+            </ul>
+          </div>
+          <div class="footer-col margin-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><strong>Email:</strong><br> <a
+                  href="#!">www.Toppangravity.com</a></li>
+              <li><strong>Phone:</strong><br> <a href="#!">+971 4 361
+                  5997</a></li>
+              <li><strong>Location:</strong><br><p class="col-margin">Ubora
+                  Office Tower, Office No. 1204 Marasi Drive, Business Bay P.O.
+                  Box 9051 Dubai, UAE</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>©2024 Toppan Gravity. All Rights Reserved</p>
+          <div class="footer-links">
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="home.js"></script>
   </body>
 </html>
